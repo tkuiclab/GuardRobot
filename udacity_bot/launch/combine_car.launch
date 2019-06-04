@@ -1,0 +1,9 @@
+<launch>
+        <node name = "udacity_bot" pkg = "udacity_bot" type= "navigation_goal"/>
+        <node name="trans_node" pkg="topic_tools" type="transform"
+                args="/cmd_vel /arduino/cmd_vel geometry_msgs/Twist 'm.linear, m.angular'"/>
+
+        <!-- <node name="trans_node" pkg="topic_tools" type="transform"
+                args="/cmd_vel /arduino/cmd_vel geometry_msgs/Twist 'm.linear.x, m.linear.y, , m.linear.z, m.angular.x, m.angular.y, m.angular.z'"/> -->
+
+</launch>
