@@ -10,7 +10,7 @@
 #define LEFT_STOP  13
 #define MIN_PWM 25.6
 #define MAX_PWM 230.4
-#define MAX_SPEED 30
+#define MAX_SPEED 6
 
 ros::NodeHandle nh;
 
